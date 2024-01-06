@@ -17,7 +17,7 @@ def on_menu_button(editor):
         an_action = main.addAction(key)
         an_action.triggered.connect(write(editor, key))
 
-    main.exec_(QCursor.pos())
+    main.exec(QCursor.pos())
 
 
 def write(editor, key):
